@@ -26,6 +26,7 @@ packages = ["src/x3fdev"]
 [tool.ruff]
 line-length = 100
 target-version = "py312"
+extend-exclude = ["third_party"]
 
 [tool.ruff.lint]
 select = ["E", "F", "W", "I", "B", "UP", "SIM"]

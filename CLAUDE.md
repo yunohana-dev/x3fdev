@@ -19,8 +19,9 @@
 
 ```sh
 uv sync                     # 依存の導入
+scripts/build_x3f.sh        # x3f_extract のビルド（tmp/bin/ に配置）
 uv run x3fdev --help
-uv run pytest               # テスト
+uv run pytest               # テスト（X3FDEV_TEST_SAMPLES を指定すると実 X3F のテストも走る）
 uv run ruff check . && uv run ruff format .
 uv run mypy src
 ```
